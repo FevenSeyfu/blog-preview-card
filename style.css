@@ -37,6 +37,14 @@ main {
   border: 1px solid #111111;
   box-shadow: 8px 8px 0px #000000;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 12px;
+}
+
+main:hover {
+  box-shadow: 16px 16px 0px #000;
 }
 
 .preview-img {
@@ -50,12 +58,6 @@ main {
   flex-grow: 0;
 }
 
-.preview-card {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  gap: 12px;
-}
 
 .category {
   background-color: var(--yellow);
@@ -85,6 +87,11 @@ main {
   font-weight: 800;
   font-size: 20px;
   line-height: 150%;
+}
+
+.blog-title:hover {
+  cursor: pointer;
+  color: var(--yellow);
 }
 
 .blog-preview {

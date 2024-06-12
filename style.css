@@ -14,6 +14,8 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   font-family: "Figtree", sans-serif;
   background-color: var(--yellow);
   color: var(--black);
@@ -27,13 +29,11 @@ body {
 main {
   width: 327px;
   height: 501px;
-  margin: 155px 24px;
   background-color: var(--white);
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-
   border: 1px solid #111111;
   box-shadow: 8px 8px 0px #000000;
   border-radius: 20px;
@@ -57,7 +57,7 @@ main {
   gap: 12px;
 }
 
-.catagory {
+.category {
   background-color: var(--yellow);
   width: 73px;
   height: 26px;
@@ -66,7 +66,9 @@ main {
   font-size: 12px;
   line-height: 150%;
   color: #111111;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
 }
 
@@ -91,7 +93,7 @@ main {
   line-height: 150%;
   color: #7f7f7f;
 }
-.blogger-info{
+.blogger-info {
   margin-top: 12px;
   display: flex;
   flex-direction: row;
@@ -99,16 +101,16 @@ main {
   gap: 12px;
 }
 
-.blogger-img{
+.blogger-img {
   width: 32px;
   height: 32px;
 }
 
-.auther-name{
-font-style: normal;
-font-weight: 800;
-font-size: 14px;
-line-height: 150%;
+.author-name {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
 }
 
 /* footer */
@@ -120,4 +122,31 @@ line-height: 150%;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media only screen and (min-width: 768px) {
+  main {
+    width: 384px;
+    height: 523px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  .preview-img {
+    width: 336px;
+    height: 200px;
+  }
+  .category {
+    width: 82px;
+    height: 29px;
+    font-size: 14px;
+  }
+  .meta {
+    font-size: 14px;
+  }
+  .blog-title {
+    font-size: 24px;
+  }
+  .blog-preview {
+    font-size: 16px;
+  }
 }

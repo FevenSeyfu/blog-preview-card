@@ -70,6 +70,7 @@ main {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  margin-top: 12px;
 }
 
 .meta {
